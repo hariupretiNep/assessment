@@ -1,4 +1,5 @@
 <template>
+<Head title="Welcome to news" />
 <HomeLayout>
     <div v-for="news in newsdata" :key="news.id" class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 grid grid-flow-col auto-cols-max">
         <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
@@ -10,7 +11,7 @@
         <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
             {{news.author}}
         </div>
-        <a v-on:click="showDetails(news)" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{news.title}}</a>
+        <a v-on:click="showDetails(news)" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline cursor-pointer">{{news.title}}</a>
         <p class="mt-2 text-gray-500">
             {{news.description}}
         </p>

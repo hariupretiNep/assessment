@@ -12,10 +12,7 @@
           <div class="hidden md:block">
             <div class="ml-4 flex items-center md:ml-6">
             <div v-if="$page.props.canLogin" class="hidden top-0 px-6 py-4 sm:block">
-            <Link v-if="$page.props.auth.user" href="/dashboard" class="text-sm text-white">
-            Dashboard
-            </Link>
-            <template v-else>
+            <template v-if="!$page.props.auth.user">
             <Link :href="route('login')" class="text-sm text-white">
             Log in
             </Link>
@@ -80,10 +77,7 @@
             </div>
           </div>
           <div v-if="$page.props.canLogin" class="top-0 px-6 py-4 ">
-            <Link v-if="$page.props.auth.user" href="/dashboard" class="text-sm text-white">
-            Dashboard
-            </Link>
-            <template v-else>
+            <template v-if="!$page.props.auth.user">
             <Link :href="route('login')" class="text-sm text-white">
             Log in
             </Link>
@@ -133,13 +127,6 @@
             <MenuItem v-for="eachCountry in $page.props.country" :key="eachCountry.id" >
             <a v-on:click="changeCountry(eachCountry)" :class="[activeCountry == eachCountry ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">{{eachCountry}}</a>
             </MenuItem>
-            <form method="POST" action="#">
-            <MenuItem v-slot="{ active }">
-            <button type="submit" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block w-full text-left px-4 py-2 text-sm']">
-            Sign out
-            </button>
-            </MenuItem>
-            </form>
             </div>
             </MenuItems>
             </transition>
