@@ -21288,6 +21288,40 @@ select {
           background-clip: text;
 }
 
+.hover\:bg-clip-border:hover {
+  background-clip: border-box;
+}
+
+.hover\:bg-clip-padding:hover {
+  background-clip: padding-box;
+}
+
+.hover\:bg-clip-content:hover {
+  background-clip: content-box;
+}
+
+.hover\:bg-clip-text:hover {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.focus\:bg-clip-border:focus {
+  background-clip: border-box;
+}
+
+.focus\:bg-clip-padding:focus {
+  background-clip: padding-box;
+}
+
+.focus\:bg-clip-content:focus {
+  background-clip: content-box;
+}
+
+.focus\:bg-clip-text:focus {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
 .bg-bottom {
   background-position: bottom;
 }
@@ -52587,6 +52621,40 @@ select {
             background-clip: text;
   }
 
+  .sm\:hover\:bg-clip-border:hover {
+    background-clip: border-box;
+  }
+
+  .sm\:hover\:bg-clip-padding:hover {
+    background-clip: padding-box;
+  }
+
+  .sm\:hover\:bg-clip-content:hover {
+    background-clip: content-box;
+  }
+
+  .sm\:hover\:bg-clip-text:hover {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .sm\:focus\:bg-clip-border:focus {
+    background-clip: border-box;
+  }
+
+  .sm\:focus\:bg-clip-padding:focus {
+    background-clip: padding-box;
+  }
+
+  .sm\:focus\:bg-clip-content:focus {
+    background-clip: content-box;
+  }
+
+  .sm\:focus\:bg-clip-text:focus {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
   .sm\:bg-bottom {
     background-position: bottom;
   }
@@ -83870,6 +83938,40 @@ select {
   }
 
   .md\:bg-clip-text {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .md\:hover\:bg-clip-border:hover {
+    background-clip: border-box;
+  }
+
+  .md\:hover\:bg-clip-padding:hover {
+    background-clip: padding-box;
+  }
+
+  .md\:hover\:bg-clip-content:hover {
+    background-clip: content-box;
+  }
+
+  .md\:hover\:bg-clip-text:hover {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .md\:focus\:bg-clip-border:focus {
+    background-clip: border-box;
+  }
+
+  .md\:focus\:bg-clip-padding:focus {
+    background-clip: padding-box;
+  }
+
+  .md\:focus\:bg-clip-content:focus {
+    background-clip: content-box;
+  }
+
+  .md\:focus\:bg-clip-text:focus {
     -webkit-background-clip: text;
             background-clip: text;
   }
@@ -115161,6 +115263,40 @@ select {
             background-clip: text;
   }
 
+  .lg\:hover\:bg-clip-border:hover {
+    background-clip: border-box;
+  }
+
+  .lg\:hover\:bg-clip-padding:hover {
+    background-clip: padding-box;
+  }
+
+  .lg\:hover\:bg-clip-content:hover {
+    background-clip: content-box;
+  }
+
+  .lg\:hover\:bg-clip-text:hover {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .lg\:focus\:bg-clip-border:focus {
+    background-clip: border-box;
+  }
+
+  .lg\:focus\:bg-clip-padding:focus {
+    background-clip: padding-box;
+  }
+
+  .lg\:focus\:bg-clip-content:focus {
+    background-clip: content-box;
+  }
+
+  .lg\:focus\:bg-clip-text:focus {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
   .lg\:bg-bottom {
     background-position: bottom;
   }
@@ -146448,6 +146584,40 @@ select {
             background-clip: text;
   }
 
+  .xl\:hover\:bg-clip-border:hover {
+    background-clip: border-box;
+  }
+
+  .xl\:hover\:bg-clip-padding:hover {
+    background-clip: padding-box;
+  }
+
+  .xl\:hover\:bg-clip-content:hover {
+    background-clip: content-box;
+  }
+
+  .xl\:hover\:bg-clip-text:hover {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .xl\:focus\:bg-clip-border:focus {
+    background-clip: border-box;
+  }
+
+  .xl\:focus\:bg-clip-padding:focus {
+    background-clip: padding-box;
+  }
+
+  .xl\:focus\:bg-clip-content:focus {
+    background-clip: content-box;
+  }
+
+  .xl\:focus\:bg-clip-text:focus {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
   .xl\:bg-bottom {
     background-position: bottom;
   }
@@ -177731,6 +177901,40 @@ select {
   }
 
   .\32xl\:bg-clip-text {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .\32xl\:hover\:bg-clip-border:hover {
+    background-clip: border-box;
+  }
+
+  .\32xl\:hover\:bg-clip-padding:hover {
+    background-clip: padding-box;
+  }
+
+  .\32xl\:hover\:bg-clip-content:hover {
+    background-clip: content-box;
+  }
+
+  .\32xl\:hover\:bg-clip-text:hover {
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .\32xl\:focus\:bg-clip-border:focus {
+    background-clip: border-box;
+  }
+
+  .\32xl\:focus\:bg-clip-padding:focus {
+    background-clip: padding-box;
+  }
+
+  .\32xl\:focus\:bg-clip-content:focus {
+    background-clip: content-box;
+  }
+
+  .\32xl\:focus\:bg-clip-text:focus {
     -webkit-background-clip: text;
             background-clip: text;
   }

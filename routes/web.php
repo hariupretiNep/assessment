@@ -15,9 +15,13 @@ use Inertia\Inertia;
 */
 
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name("Homepage");
-// Route::get('/{source?}/{country?}/{lang?}', function($source=null,$country=null,$lang=null){
-   
-// });
+Route::post('/', 'App\Http\Controllers\HomeController@newslist')->name("Filternews");
+Route::any('/details', 'App\Http\Controllers\HomeController@newsDetail')->name("Details");
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::post('/action/like', 'App\Http\Controllers\UserLikeDislikeController@like')->name("Like");
+    Route::post('/action/dislike', 'App\Http\Controllers\UserLikeDislikeController@dislike')->name("Dislike");
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
