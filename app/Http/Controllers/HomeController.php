@@ -24,12 +24,12 @@ class HomeController extends Controller
     }
 
     public function index(Request $request){
-        $response = Http::get('https://newsapi.org/v2/top-headlines?country=us&apiKey=1acff5f1e6c84fa8a97f4b5f8a960eae');
+        $response = Http::get('https://newsapi.org/v2/top-headlines?country=us&apiKey='.env('NEWS_API_KEY'));
         return Inertia::render('Home', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
-            // 'newsdata' => $response->object()->articles,
-            'newsdata' => [],
+            'newsdata' => $response->object()->articles,
+            // 'newsdata' => [],
             'country' => $this->country,
             'lang' => $this->lang,
             'sources' => $this->sources
@@ -58,13 +58,13 @@ class HomeController extends Controller
         }else{
             $uriParam .= "country=us&";
         }
-        $completeURL = "https://newsapi.org/v2/top-headlines?".$uriParam."apiKey=1acff5f1e6c84fa8a97f4b5f8a960eae";
+        $completeURL = "https://newsapi.org/v2/top-headlines?".$uriParam."apiKey=".env('NEWS_API_KEY');
         $response = Http::get($completeURL);
         return Inertia::render('Home', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
-            // 'newsdata' => $response->object()->articles,
-            'newsdata' => [],
+            'newsdata' => $response->object()->articles,
+            // 'newsdata' => [],
             'country' => $this->country,
             'lang' => $this->lang,
             'sources' => $this->sources

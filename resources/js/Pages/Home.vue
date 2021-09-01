@@ -1,5 +1,5 @@
 <template>
-  <HomeLayout>
+<HomeLayout>
     <div v-for="news in newsdata" :key="news.id" class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 grid grid-flow-col auto-cols-max">
         <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
@@ -18,7 +18,7 @@
         </div>
         </div>
     </div>
-  </HomeLayout>
+</HomeLayout>
 </template>
 
 <script>
@@ -27,8 +27,8 @@ import HomeLayout from '../Layouts/HomeLayout.vue';
 
 export default {
     components: {
-      Head,
-      HomeLayout,
+    Head,
+    HomeLayout,
     },
     props: {
     canLogin: Boolean,
@@ -43,11 +43,6 @@ export default {
     data() {
         return {
             form:"",
-        }
-    },
-    setup() {
-        return {
-          
         }
     },
     methods:{
